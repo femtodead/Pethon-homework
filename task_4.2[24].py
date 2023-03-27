@@ -12,5 +12,6 @@
 # Output1: Макс. кол-во ягод 184, собрано для куста 1
 
 my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+my_list.append(my_list[0])
 number_bush = int(input("Введите номер куста: "))
 print(f"Макс. кол-во ягод {my_list[number_bush-1]+my_list[number_bush]+my_list[number_bush-2]}, собрано для куста {number_bush}")
