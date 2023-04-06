@@ -101,7 +101,7 @@ def Print_List(phonebook): # печать + id
 # 3) импорт данных в текстовый файл формата csv
 def Inport_phonebook(phonebook):
     import os
-    datapath = os.path.join(".", 'seminar_8')
+    datapath = os.path.join('.')
     file = open(os.path.join(datapath,file_name()), mode = "r", encoding="utf-8")
     phonebook = [el.strip().split(" ") for el in file]
     file.close()
@@ -113,7 +113,7 @@ def Inport_phonebook(phonebook):
 def export_phonebook(phonebook):
     print(phonebook)
     import os
-    datapath = os.path.join(".",'seminar_8')
+    datapath = os.path.join('.')
     file = open(os.path.join(datapath,file_name()), mode = "w", encoding="utf-8")
     for el in phonebook:
         file.write(f"{el[0]} {el[1]} {el[2]} {el[3]}\n")
